@@ -1,17 +1,17 @@
 <template>
-    <section class="bg-slate-950 py-[50px] flex flex-col">
-        <slot/>
-    </section>
+  <section class="bg-slate-950 flex flex-col">
+    <slot />
+  </section>
 </template>
 
 <style scoped>
-    section {
-        min-height: 100vh;
-    }
+section {
+  min-height: 100vh;
+}
 
-    @media  (max-width: 610px)  {
-        section {
-            padding: 130px 0px;
-        }
-    }
+@media (max-width: 610px) {
+  section {
+    padding: 130px 0px;
+  }
+}
 </style>
