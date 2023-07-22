@@ -1,14 +1,15 @@
 <script setup>
   import { RouterView } from 'vue-router'
   import ViviBotBrand from './components/icons/ViviBotBrand.vue'
-  const links = "text-blue-400 font-bold transition-colors hover:text-blue-100 text-sm font-pp"
-  const header = "flex justify-between items-center"
+  const links = "text-blue-400 font-bold transition-colors hover:text-blue-200 text-sm font-pp"
+  const header = "flex flex-row justify-between items-center fixed h-[50px] w-full"
+  const hoverLogo = "hover:brightness-125 transition-all"
 </script>
 
 <template>
   <header :class="header">
     <div>
-      <RouterLink to="/">
+      <RouterLink to="/" :class="hoverLogo">
         <ViviBotBrand />
       </RouterLink>
     </div>
@@ -30,16 +31,23 @@
 <style scoped>
 header {
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7847514005602241) 100%);
-  height: 50px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.09007352941176472) 0%, rgba(0,0,0,1) 89%);
   padding: 0px 12.361111111111%;
-  position: fixed;
-  width: 100%;
 }
 
 @media  (max-width: 1366px) {
   header  {
     padding: 0px 74px;
+  }
+}
+
+@media  (max-width: 610px)  {
+  header  {
+    background: linear-gradient(0deg, rgba(0,0,0,0.6138830532212884) 0%, rgba(0,0,0,1) 100%);
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+    padding: 10px 74px
   }
 }
 </style>

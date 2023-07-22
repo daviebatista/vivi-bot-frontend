@@ -1,12 +1,12 @@
 <script setup>
-import ViviBotBrand from '../components/icons/ViviBotBrand.vue'
 import Container from '../components/Container.vue';
+import Hero from '../components/Home/Hero.vue';
 </script>
 
 <template>
-  <Container>
+  <Container class="pt-24">
     <slot>
-      <ViviBotBrand/>
+      <Hero/>
     </slot>
   </Container>
 </template>

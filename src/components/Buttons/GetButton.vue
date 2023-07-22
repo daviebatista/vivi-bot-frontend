@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <svg width="164" height="45" viewBox="0 0 164 45" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="164" height="45" rx="15" fill="#0C134F" />
