@@ -1,7 +1,13 @@
+<script setup>
+  import Container from '../components/Container.vue';
+</script>
+
 <template>
-  <div class="source">
-    <h1 class="bg-zinc-500 text-zinc-800">This is a source page</h1>
-  </div>
+  <Container>
+    <slot>
+      <h1>This is the <source> section</h1>
+    </slot>
+  </Container>
 </template>
 
 <style></style>

@@ -1,10 +1,15 @@
 <script setup>
 import ViviBotBrand from '../components/icons/ViviBotBrand.vue'
+import Container from '../components/Container.vue';
 </script>
 
 <template>
-  <main class="flex px-6">
-    <h1>This is the home page</h1>
-    <ViviBotBrand />
-  </main>
+  <Container>
+    <slot>
+      <ViviBotBrand/>
+    </slot>
+  </Container>
 </template>
+
+<style scoped>
+</style>
