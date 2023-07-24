@@ -1,13 +1,17 @@
 <script setup>
 import Container from '../components/Container.vue'
+import Hero from '../components/About/Hero.vue';
+import About from '../components/About/About.vue';
 </script>
 
 <template>
   <Container>
     <slot>
-      <h1>This is the about section</h1>
+      <Hero/>
+      <About/>
     </slot>
   </Container>
 </template>
 
-<style></style>
+<style scoped>
+</style>

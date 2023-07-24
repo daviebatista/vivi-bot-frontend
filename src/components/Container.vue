@@ -11,7 +11,7 @@ section {
 
 @media (max-width: 610px) {
   section {
-    padding: 130px 0px;
+    padding: 130px 0px 0px 0px;
   }
 }
 </style>

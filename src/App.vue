@@ -34,6 +34,7 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.09007352941176472) 0%, rgba(0, 0, 0, 1) 89%);
   padding: 0px 12.361111111111%;
+  z-index: 10;
 }
 
 footer  {
@@ -58,6 +59,10 @@ footer  {
     gap: 10px;
     height: 100px;
     padding: 10px 74px;
+  }
+
+  footer  {
+    padding: 30px 40px 30px 40px;
   }
 }
 </style>
