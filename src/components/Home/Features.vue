@@ -27,13 +27,13 @@
     section {
         background: rgb(0,2,22);
         background: linear-gradient(0deg, rgba(0,2,22,1) 50%, rgba(0,0,0,1) 100%);
-        padding: 100px 12.361111111111%;
+        padding: 0px 12.361111111111%;
         min-height: 100vh;
     }
 
     @media (max-width: 1366px) {
         section {
-            padding: 100px 85px;
+            padding: 0px 85px;
         }
     }
 

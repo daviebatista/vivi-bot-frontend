@@ -1,22 +1,23 @@
 <script setup>
-    const section = 'flex flex-col-reverse md:flex-row items-center justify-between gap-8 text-center md:text-left mt-12'
+    const section = 'flex flex-col-reverse md:flex-row items-center justify-between gap-8 text-center md:text-left'
     const img = 'md:w-[256px] w-[180px]'
-    const div = 'flex flex-col justify-between gap-10 w-[50%] items-center md:items-start'
+    const div = 'flex flex-col justify-between gap-10 w-[50%] items-center md:items-start mt-12 md:mt-0'
     const h1 = 'font-ms text-violet-600 md:text-3xl lg:text-4xl text-2xl sm:text-4xl font-bold text-center'
     const p = 'text-blue-50 font-pp text-md md:text-2xl'
     const a = 'bg-violet-600 w-[184px] h-[50px] flex flex-row items-center rounded-xl justify-center'
+    const link = "text-blue-50 font-pp text-xl"
 
 </script>
 
 <template>
-    <section :class="section">
+    <section :class="section" class="py">
         <img src="../../assets/contribution.svg" alt="contribution" :class="img">
         <div :class="div">
             <h1 :class="h1">Contribute</h1>
             <p :class="p">Vivi Bot can be upgraded and become a better service with your help!</p>
             <p :class="p">Adding features to the application’s source code will help Vivi Bot to reach more people and increase its help.</p>
             <a href="https://github.com/daviebatista/vivi-bot" target="_blank" :class="a">
-                <p :class="p">Try Out</p>
+                <p :class="link">Try Out</p>
                 <img src="../../assets/button-arrow.svg" alt="right-arrow">
             </a>
         </div>
@@ -57,7 +58,7 @@
 
     @media (max-width: 1366px) {
         section {
-            padding: 100px 85px;
+            padding: 0px 85px;
         }
     }
 
