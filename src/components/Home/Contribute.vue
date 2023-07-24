@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <section :class="section" class="py">
+    <section :class="section" id="contribute">
         <img src="../../assets/contribution.svg" alt="contribution" :class="img">
         <div :class="div">
             <h1 :class="h1">Contribute</h1>

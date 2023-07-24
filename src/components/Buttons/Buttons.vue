@@ -9,13 +9,13 @@ const linkHover = 'hover:brightness-150 transition-all'
 
 <template>
   <div :class="div">
-    <a href="" :class="linkHover">
+    <a href="#features" :class="linkHover">
       <FeaturesButton />
     </a>
-    <a href="" :class="linkHover">
+    <a href="https://github.com/daviebatista/vivi-bot" target="_blank" :class="linkHover">
       <GetButton />
     </a>
-    <a href="" :class="linkHover">
+    <a href="#contribute" :class="linkHover">
       <ContributeButton />
     </a>
   </div>

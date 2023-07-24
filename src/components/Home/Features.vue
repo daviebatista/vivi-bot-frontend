@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <section :class="section">
+    <section :class="section" id="features">
         <div :class="div">
             <h1 :class="h1">Native Features</h1>
             <ul :class="ul">
