@@ -1,5 +1,5 @@
 <script setup>
-const section = 'flex flex-col md:flex-row lg:mt-16 justify-between items-center gap-[20%] mt-24'
+const section = 'flex flex-col lg:flex-row lg:mt-16 justify-between items-center gap-[20%] mt-24'
 const img = 'lg:w-96 md:w-72 sm:w-56 w-44'
 const div = 'flex flex-col justify-center w-full text-center md:text-left'
 const h1 = 'font-pp text-blue-100 text-4xl lg:text-4xl md:text-3xl mt-20'
