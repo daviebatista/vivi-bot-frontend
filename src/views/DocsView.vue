@@ -1,11 +1,12 @@
 <script setup>
 import Container from '../components/Container.vue'
+import Docs from '../components/Docs/Docs.vue'
 </script>
 
 <template>
   <Container>
     <slot>
-      <h1>This is the docs section</h1>
+      <Docs />
     </slot>
   </Container>
 </template>

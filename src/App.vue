@@ -5,8 +5,8 @@ const links = 'text-blue-400 font-bold transition-colors hover:text-blue-200 tex
 const div = 'flex gap-14'
 const header = 'flex flex-row justify-between items-center fixed h-[50px] w-full'
 const hoverLogo = 'hover:brightness-125 transition-all'
-const footer = 'bg-black font-ms text-violet-300 text-sm md:text-start text-center'
-const p = 'border-t-4 border-violet-600 pt-4 pb-2'
+const footer = 'bg-black font-ms text-blue-300 text-sm md:text-start text-center'
+const p = 'border-t-4 border-blue-400 pt-4 pb-2'
 </script>
 
 <template>
@@ -19,12 +19,17 @@ const p = 'border-t-4 border-violet-600 pt-4 pb-2'
     <div :class="div">
       <RouterLink :class="links" to="/about"> About </RouterLink>
       <RouterLink :class="links" to="/docs"> Docs </RouterLink>
-      <RouterLink :class="links" to="/source"> Source </RouterLink>
+      <a :class="links" href="https://github.com/daviebatista/vivi-bot/tree/V2.3" target="_blank">
+        Source
+      </a>
     </div>
   </header>
   <RouterView />
   <footer :class="footer">
-    <p :class="p">Vivi Bot is an open-source project distributed via daviebatista’s GitHub account and bootstrapped with Discord.Js library.</p>
+    <p :class="p">
+      Vivi Bot is an open-source project distributed via daviebatista’s GitHub account and
+      bootstrapped with Discord.Js library.
+    </p>
     <p>2023. All Rights Reserved.</p>
   </footer>
 </template>
@@ -37,7 +42,7 @@ header {
   z-index: 10;
 }
 
-footer  {
+footer {
   min-height: 15vh;
   padding: 0px 12.361111111111%;
 }
@@ -46,11 +51,10 @@ footer  {
   header {
     padding: 0px 74px;
   }
-  footer  {
+  footer {
     padding: 30px 74px 30px 74px;
   }
 }
-
 
 @media (max-width: 610px) {
   header {
@@ -61,7 +65,7 @@ footer  {
     padding: 10px 74px;
   }
 
-  footer  {
+  footer {
     padding: 30px 40px 30px 40px;
   }
 }

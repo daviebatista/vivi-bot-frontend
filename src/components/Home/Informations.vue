@@ -19,7 +19,7 @@ const strong = 'uppercase text-sm font-light font-ms mt-10 pb-16'
         Save time, efforts and money. Vivi Bot is <strong>free</strong> to be used, and will
         <strong>always</strong> be that way.
       </p>
-      <strong :class="strong">Current version: 3.3.3</strong>
+      <strong :class="strong">Current version: 2.3</strong>
     </div>
   </section>
 </template>
